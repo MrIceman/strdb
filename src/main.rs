@@ -1,8 +1,7 @@
 use std::borrow::{Borrow, BorrowMut};
-use futures::executor::block_on;
 
 use crate::processor::content_processor::init;
-use crate::processor::model::config::{Config, get_config};
+use crate::processor::model::config::{get_config};
 
 mod processor;
 
@@ -11,7 +10,7 @@ fn main() {
     config.describe();
 
     async {
-        config.init().await
+        config.init().await;
     };
 
     config.describe();
