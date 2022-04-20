@@ -3,8 +3,8 @@ use std::fs::File;
 use std::io::{Read, Write};
 
 pub struct Config {
-    amount_of_entries: i64,
-    write_workers_amount: u8,
+    pub amount_of_entries: i64,
+    pub write_workers_amount: u8,
 }
 
 pub fn get_config() -> Config {

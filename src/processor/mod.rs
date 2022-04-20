@@ -1,3 +1,3 @@
-pub mod content_processor;
+pub mod manager;
 pub mod model;
 pub mod io;

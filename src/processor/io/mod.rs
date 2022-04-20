@@ -3,3 +3,4 @@ pub mod engine;
 pub mod write_message;
 pub mod write_worker;
 pub mod writer;
+pub mod main;

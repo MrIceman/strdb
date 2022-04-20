@@ -9,7 +9,7 @@ struct WriteWorkerImpl<'a> {
     engine: &'a dyn StrDbEngine,
 }
 
-pub fn create_write_worker(uuid: &str,
+pub fn create_write_worker<'a>(uuid: &str,
                            engine: &'static dyn StrDbEngine) -> Box<dyn WriteWorker> {
     return Box::new(WriteWorkerImpl {
         uuid: String::from(uuid),
